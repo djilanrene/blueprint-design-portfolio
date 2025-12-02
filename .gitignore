@@ -1,0 +1,72 @@
+# Dossier Admin COMPLET
+/src/admin/
+/public/admin.php
+
+# Fichier de configuration du site (ne doit jamais être sur Git)
+/config-site.php
+
+# Fichiers de dépendances (si tu en utilises plus tard)
+/vendor/
+/node_modules/
+
+# Fichiers système et logs
+.DS_Store
+*.log
+.env
+```*(Remarque : j'ai utilisé `/public/admin.php` car tu as déplacé tes fichiers à la racine comme conseillé précédemment. Si tu as gardé la structure avec `public/`, ajuste en conséquence).*
+
+---
+
+### 3. Mise en Place du Déploiement Continu
+
+#### ÉTAPE 1 : Stocker tes identifiants FTP en toute sécurité
+Ne mets **jamais** ton mot de passe FTP directement dans le code. On va utiliser les "Secrets" de GitHub.
+
+1.  Va sur ton dépôt GitHub > **Settings** > **Secrets and variables** > **Actions**.
+2.  Clique sur **"New repository secret"**.
+3.  Crée ces trois secrets :
+    *   **`FTP_SERVER`** : L'adresse de ton serveur FTP (ex: `ftpupload.net` chez ProFreeHost).
+    *   **`FTP_USERNAME`** : Ton nom d'utilisateur FTP (ex: `pfs_12345678`).
+    *   **`FTP_PASSWORD`** : Ton mot de passe FTP.
+
+#### ÉTAPE 2 : Créer le Fichier de Workflow GitHub Action
+1.  Dans ton projet local, crée cette arborescence de dossiers : `.github/workflows/`.
+2.  À l'intérieur de `workflows`, crée un fichier nommé `deploy.yml`.
+
+#### ÉTAPE 3 : Coller le code dans `deploy.yml`
+Ce code utilise une action très populaire (`SamKirkland/FTP-Deploy-Action`) pour faire le travail.
+
+```yml
+# Nom du workflow qui apparaîtra dans l'onglet "Actions" de GitHub
+name: Deploy to ProFreeHost
+
+# Déclencheur : ce workflow s'exécute à chaque push sur la branche 'main'
+on:
+  push:
+    branches:
+      - main
+
+# Les tâches à exécuter
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # Le robot tourne sur un serveur Linux
+    steps:
+      # 1. Récupère le code de ton dépôt
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Déploie les fichiers via FTP
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # Identifiants FTP (lus depuis les Secrets GitHub)
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          # Dossier local à synchroniser (la racine du projet)
+          local-dir: ./ 
+
+          # Dossier distant sur le serveur (où se trouve ton site)
+          # Généralement 'htdocs/' sur ProFreeHost. A vérifier.
+          server-dir: htdocs/

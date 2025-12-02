@@ -1,0 +1,28 @@
+portfolio-glass/
+├── config/                  # LE CERVEAU
+│   └── data.json            # Textes, liens des images, couleurs
+├── public/                  # LA VITRINE (Document Root)
+│   ├── index.php            # Point d'entrée
+│   ├── admin.php            # (Optionnel) Ton interface d'édition
+│   ├── assets/              # RESSOURCES STATIQUES
+│   │   ├── css/
+│   │   │   ├── main.css     # Layout global & Reset
+│   │   │   ├── glass.css    # Classes utilitaires pour l'effet Verre
+│   │   │   └── mobile.css   # Media queries
+│   │   ├── js/
+│   │   │   ├── app.js       # Ta logique (scroll, curseur custom)
+│   │   │   └── libs/        # Librairies externes (GSAP ou Rellax.js)
+│   │   ├── fonts/           # Polices modernes (Satoshi, General Sans, etc.)
+│   │   └── images/
+│   │       ├── projects/    # Images des réalisations
+│   │       └── ui/          # Textures de fond, blobs, bruits
+├── src/                     # LE MOTEUR
+│   ├── functions.php        # Fonctions PHP (récupération data.json)
+│   └── templates/           # COMPOSANTS VISUELS (Vues)
+│       ├── _head.php        # Meta tags, SEO, link CSS
+│       ├── nav.php          # Menu flottant (Glass)
+│       ├── hero.php         # Intro avec gros texte Parallaxe
+│       ├── gallery.php      # Grille des projets (Cards Glass)
+│       ├── about.php        # Section texte
+│       └── footer.php       # Bas de page
+└── .gitignore

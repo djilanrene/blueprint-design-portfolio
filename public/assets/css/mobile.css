@@ -1,0 +1,133 @@
+/* ==========================================================================
+   MOBILE RESPONSIVENESS & PERFORMANCE
+   Breakpoint cible : < 768px (Tablettes & Mobiles)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* --- 1. AJUSTEMENTS GLOBAUX DU SYSTÈME --- */
+    :root {
+        /* On réduit la taille de police de base pour que les ratios "rem" suivent */
+        font-size: 14px; 
+        
+        /* On réduit l'intensité du flou pour épargner le GPU du téléphone */
+        --blur-strength: 8px; 
+        
+        /* Marges réduites pour gagner de la place */
+        --container-width: 100%;
+    }
+
+    /* Sécurité pour éviter le débordement horizontal (classique erreur junior) */
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .container {
+        padding: 0 16px; /* Marge latérale standard mobile */
+    }
+
+    /* --- 2. TYPOGRAPHIE RESPONSIVE --- */
+    h1 {
+        font-size: 2.5rem; /* Évite que le titre Hero ne sorte de l'écran */
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.1rem; /* Texte un peu plus gros pour la lisibilité */
+    }
+
+    /* --- 3. GESTION DES GRILLES (STACKING) --- */
+    /* On passe tout ce qui est grid/flex horizontal en colonne verticale */
+    
+    .grid-projects, 
+    .nav-inner, 
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Reset des largeurs spécifiques */
+    .col-6, .col-4 {
+        width: 100% !important;
+        margin-bottom: 24px;
+    }
+
+    /* --- 4. NAVIGATION MOBILE --- */
+    /* Sur mobile, on change souvent la nav flottante en barre fixe en bas 
+       ou on simplifie drastiquement */
+    
+    nav {
+        top: auto !important; /* On annule le top */
+        bottom: 20px;         /* On la met en bas (plus facile pour le pouce) */
+        width: calc(100% - 32px) !important; /* Largeur - padding */
+        left: 16px !important;
+        transform: none !important; /* Annule le centrage CSS complexe */
+    }
+
+    nav .nav-links {
+        justify-content: space-around; /* Répartit les liens équitablement */
+        padding: 10px 0;
+    }
+    
+    /* Cache le logo ou le nom dans la nav pour gagner de la place si besoin */
+    nav .brand {
+        display: none; 
+    }
+
+    /* --- 5. ADAPTATION DES CARTES PROJET --- */
+    .project-card {
+        aspect-ratio: auto; /* Annule les ratios fixes */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .project-card .img-wrapper {
+        height: 250px; /* Hauteur fixe pour les images sur mobile */
+    }
+
+    /* --- 6. OPTIMISATIONS PERFORMANCE & UI --- */
+    
+    /* Désactiver le Parallaxe sur les éléments décoratifs trop lourds */
+    .blob {
+        opacity: 0.2; /* On les rend plus discrets */
+        animation-duration: 40s; /* On ralentit l'animation pour le CPU */
+    }
+
+    /* Suppression des effets "Hover" qui collent sur mobile */
+    /* Sur mobile, le hover reste activé après le tap, ce qui est buggé. 
+       On utilise :active pour le feedback immédiat au toucher. */
+    .glass-interactive:hover {
+        transform: none;
+        box-shadow: var(--glass-shadow);
+    }
+    
+    .glass-interactive:active {
+        transform: scale(0.98); /* Petit effet d'enfoncement au toucher */
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Le curseur custom (gros rond qui suit la souris) doit être caché */
+    .cursor-dot, 
+    .cursor-outline {
+        display: none !important;
+    }
+}
+
+/* ==========================================================================
+   EXTRA SMALL DEVICES (iPhone SE, etc. < 375px)
+   ========================================================================== */
+@media screen and (max-width: 375px) {
+    h1 { font-size: 2rem; }
+    
+    /* Ajustement extreme pour les petits écrans */
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+}

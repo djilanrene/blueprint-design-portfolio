@@ -1,0 +1,48 @@
+# Nom du workflow qui s'affichera dans l'onglet "Actions" de ton dépôt GitHub
+name: Déployer le site sur ProFreeHost
+
+# --- DÉCLENCHEUR ---
+# Ce workflow s'exécute automatiquement à chaque "push" sur la branche "main"
+on:
+  push:
+    branches:
+      - main
+
+# --- TÂCHES À EXÉCUTER ---
+jobs:
+  # On définit une seule tâche nommée "ftp-deploy"
+  ftp-deploy:
+    # Le robot (runner) qui exécutera les commandes tournera sur un serveur Linux récent
+    runs-on: ubuntu-latest
+    
+    # Séquence des étapes à suivre
+    steps:
+      # Étape 1 : Récupérer le code
+      # Le robot télécharge la dernière version de ton code depuis la branche "main"
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      # Étape 2 : Synchroniser les fichiers via FTP
+      # C'est ici que la magie opère. Le robot se connecte à ton hébergement et envoie les fichiers.
+      - name: Déploiement FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # Adresse du serveur FTP (lue depuis les secrets)
+          server: ${{ secrets.FTP_SERVER }}
+          
+          # Nom d'utilisateur FTP (lu depuis les secrets)
+          username: ${{ secrets.FTP_USERNAME }}
+          
+          # Mot de passe FTP (lu depuis les secrets)
+          password: ${{ secrets.FTP_PASSWORD }}
+          
+          # Dossier local à envoyer (./ signifie "la racine du projet")
+          local-dir: ./
+          
+          # Dossier de destination sur le serveur
+          # Sur ProFreeHost, c'est généralement "htdocs/". Vérifie dans ton File Manager.
+          server-dir: htdocs/
+          
+          # Option pour supprimer les fichiers sur le serveur qui n'existent plus sur Git
+          # À utiliser avec prudence. Pour l'instant, on laisse à 'false'.
+          delete: false

@@ -1,0 +1,702 @@
+{
+    "config": {
+        "email_admin": "hello@alexdesign.tg",
+        "currency": "FCFA",
+        "logo_initial": "J.",
+        "logo_text": "Junior",
+        "cta_nav": "Repo Github",
+        "cta_nav_link": "projects.php",
+        "status_text": "Dispo",
+        "footer_copyright": "© 2025 Junior DJILAN.",
+        "footer_location": "Lomé, Togo."
+    },
+    "meta": {
+        "title": "Alex | Designer Graphique & UI à Lomé",
+        "description": "Portfolio créatif spécialisé en Identité Visuelle, UI\/UX Design et Création Web. Basé au Togo.",
+        "og_image": "assets\/images\/og-share.jpg"
+    },
+    "nav": [
+        {
+            "label": "Accueil",
+            "link": "index.php"
+        },
+        {
+            "label": "À Propos",
+            "link": "about-me.php"
+        },
+        {
+            "label": "Projets",
+            "link": "projects.php"
+        },
+        {
+            "label": "Contact",
+            "link": "#contact"
+        }
+    ],
+    "hero": {
+        "greeting": "Hello, je suis Junior",
+        "headline": "Je transforme vos idées en expériences visuelles mémorables.",
+        "subtitle": "Designer Graphique & UI spécialisé dans la création d'interfaces modernes et d'identités de marque fortes.",
+        "cta_text": "Voir mes projets",
+        "cta_link": "projects.php"
+    },
+    "about": {
+        "title": "Au-delà de l'esthétique,<br>je conçois de la valeur.",
+        "text": "Basé à Lomé, je suis obsédé par le détail. Je ne me contente pas de rendre les choses 'jolies'. Je conçois des systèmes visuels qui résolvent de vrais problèmes business.",
+        "stats": [
+            {
+                "label": "Années d'expérience",
+                "value": "04+"
+            },
+            {
+                "label": "Projets livrés",
+                "value": "30+"
+            },
+            {
+                "label": "Clients satisfaits",
+                "value": "100%"
+            }
+        ]
+    },
+    "about_page": {
+        "title": "Mon Parcours",
+        "headline": "Designer par passion, Stratège par expérience.",
+        "story": [
+            "Tout a commencé il y a 4 ans dans une petite chambre d'étudiant à Lomé. Fasciné par la manière dont le design peut influencer les décisions d'achat, j'ai troqué mes manuels scolaires contre des tutoriels intensifs. Ce qui n'était qu'un hobby est vite devenu une obsession.",
+            "Aujourd'hui, je ne me contente pas de faire du 'beau'. Je travaille avec des entreprises togolaises et internationales pour construire des identités qui durent. Mon approche est simple : éliminer le superflu pour ne garder que l'essentiel, car la clarté est la clé de la conversion.",
+            "Quand je ne suis pas derrière mon écran à ajuster des pixels sur Figma, je suis probablement en train de chercher le meilleur café de la ville ou d'analyser les affiches publicitaires dans la rue pour comprendre ce qui capte l'attention des gens ici."
+        ],
+        "image": "https:\/\/images.unsplash.com\/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
+        "skills": [
+            "UI\/UX Design",
+            "Figma Expert",
+            "Adobe Creative Suite",
+            "Stratégie de Marque",
+            "Webflow \/ HTML \/ CSS",
+            "Motion Design"
+        ]
+    },
+    "projects": [
+        {
+            "id": 1,
+            "title": "Koura Bank App",
+            "category": "UI\/UX Design",
+            "description": "Redesign complet de l'application bancaire mobile pour une fintech ouest-africaine.",
+            "image": "https:\/\/images.unsplash.com\/photo-1563986768609-322da13575f3?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": true,
+            "link": "project.php?id=1",
+            "details": {
+                "client": "Koura Finance Group",
+                "year": "2024",
+                "role": "Lead Product Designer",
+                "challenge": "L'application existante souffrait d'un taux d'abandon élevé (60%) lors de l'inscription.",
+                "solution": "Refonte du User Flow pour réduire l'inscription à 3 étapes. Design d'un mode sombre natif.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1556742049-0cfed4f7a07d?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1556742102-fab0303bb7fd?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "title": "Lomé Coffee Co.",
+            "category": "Branding",
+            "description": "Identité visuelle et packaging pour une chaîne de cafés premium.",
+            "image": "https:\/\/images.unsplash.com\/photo-1600093463592-8e36ae95ef56?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": true,
+            "link": "project.php?id=2",
+            "details": {
+                "client": "Lomé Coffee Co.",
+                "year": "2023",
+                "role": "Art Director",
+                "challenge": "Se démarquer dans un marché saturé avec une identité qui mêle tradition et modernité.",
+                "solution": "Création d'un logo typographique fort et d'une palette de couleurs terreuse.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1511920170033-f8396924c348?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1497935586351-b67a49e012bf?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "title": "Africa Tech Summit",
+            "category": "Web Design",
+            "description": "Landing page événementielle haute conversion.",
+            "image": "https:\/\/images.unsplash.com\/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": true,
+            "link": "project.php?id=3",
+            "details": {
+                "client": "ATS Group",
+                "year": "2023",
+                "role": "Web Designer",
+                "challenge": "Vendre 500 billets en moins de 30 jours.",
+                "solution": "Design One-Page dynamique avec compteurs d'urgence.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1505373877841-8d25f7d46678?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1591115765373-5207764f72e7?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "title": "Nana Wax Concept",
+            "category": "E-commerce",
+            "description": "Concept de boutique en ligne minimaliste pour la mode.",
+            "image": "https:\/\/images.unsplash.com\/photo-1483985988355-763728e1935b?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": true,
+            "link": "project.php?id=4",
+            "details": {
+                "client": "Projet Personnel",
+                "year": "2024",
+                "role": "UI Designer",
+                "challenge": "Moderniser la vente de pagne en ligne avec les codes du luxe.",
+                "solution": "Utilisation massive d'espace blanc et typographie serif élégante.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1490481651871-ab68de25d43d?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1469334031218-e382a71b716b?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "title": "Immo Togo",
+            "category": "App Design",
+            "description": "Plateforme de recherche immobilière simplifiée.",
+            "image": "https:\/\/images.unsplash.com\/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": true,
+            "link": "project.php?id=5",
+            "details": {
+                "client": "Agence ImmoTogo",
+                "year": "2022",
+                "role": "Product Designer",
+                "challenge": "Simplifier la recherche de logement à Lomé.",
+                "solution": "Interface cartographique intuitive avec filtres avancés.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1460925895917-afdab827c52f?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "title": "DataFlow SaaS",
+            "category": "Dashboard UI",
+            "description": "Interface d'administration sombre pour la logistique.",
+            "image": "https:\/\/images.unsplash.com\/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": true,
+            "link": "project.php?id=6",
+            "details": {
+                "client": "DataFlow Africa",
+                "year": "2023",
+                "role": "UI Designer",
+                "challenge": "Visualiser des données complexes sans surcharger l'utilisateur.",
+                "solution": "Design Dark Mode ergonomique et graphiques interactifs.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1504868584819-f8e8b4b6d7e3?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1551033406-611cf9a28f67?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "title": "Eco-Ferme",
+            "category": "Identité Visuelle",
+            "description": "Branding pour une coopérative agricole bio.",
+            "image": "https:\/\/images.unsplash.com\/photo-1464226184884-fa280b87c399?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": false,
+            "link": "project.php?id=7",
+            "details": {
+                "client": "Bio Togo",
+                "year": "2023",
+                "role": "Brand Designer",
+                "challenge": "Rendre l'agriculture sexy pour les investisseurs.",
+                "solution": "Identité verte et moderne, loin des clichés habituels.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1625246333195-78d9c38ad449?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1500937386664-56d1dfef3854?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "title": "Zemidjan Go",
+            "category": "Mobile App",
+            "description": "App de réservation de taxi-moto sécurisée.",
+            "image": "https:\/\/images.unsplash.com\/photo-1449965408869-eaa3f722e40d?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=8",
+            "details": {
+                "client": "GoZem",
+                "year": "2024",
+                "role": "UX Researcher",
+                "challenge": "Rassurer les utilisateurs sur la sécurité des trajets.",
+                "solution": "Système de suivi temps réel et badge de confiance conducteur.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1581091226825-a6a2a5aee158?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1526304640152-d4619684e484?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "title": "Lomé Fashion Week",
+            "category": "Social Media",
+            "description": "Campagne visuelle pour l'événement mode de l'année.",
+            "image": "https:\/\/images.unsplash.com\/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=9",
+            "details": {
+                "client": "LFW Organization",
+                "year": "2023",
+                "role": "Graphic Designer",
+                "challenge": "Créer le buzz sur Instagram et TikTok.",
+                "solution": "Visuels néons audacieux et templates de stories animées.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1537832816519-689ad163238b?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1581044777550-4cfa60707c03?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "title": "Cabinet Architecture",
+            "category": "Web Design",
+            "description": "Site vitrine minimaliste pour architectes.",
+            "image": "https:\/\/images.unsplash.com\/photo-1487958449943-2429e8be8625?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": false,
+            "link": "project.php?id=10",
+            "details": {
+                "client": "Bâtir Afrique",
+                "year": "2022",
+                "role": "Web Designer",
+                "challenge": "Mettre en valeur les photos de bâtiments sans distraction.",
+                "solution": "Layout asymétrique et typographie suisse.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1497366216548-37526070297c?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1497366811353-6870744d04b2?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "title": "Crypto Wallet",
+            "category": "UI Design",
+            "description": "Interface futuriste pour gestion de crypto-monnaies.",
+            "image": "https:\/\/images.unsplash.com\/photo-1639762681485-074b7f938ba0?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=11",
+            "details": {
+                "client": "CoinAfrica",
+                "year": "2024",
+                "role": "UI Designer",
+                "challenge": "Rendre la crypto accessible aux débutants.",
+                "solution": "Design épuré, gros boutons d'action et graphiques simplifiés.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1621416894569-0f39ed31d247?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1642104704074-907c0698b98d?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 12,
+            "title": "Restaurant Saveurs",
+            "category": "Web & Menu",
+            "description": "Site de commande et design de menu physique.",
+            "image": "https:\/\/images.unsplash.com\/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=12",
+            "details": {
+                "client": "Saveurs du Togo",
+                "year": "2023",
+                "role": "Designer 360",
+                "challenge": "Augmenter les commandes en ligne.",
+                "solution": "Photos culinaires alléchantes et checkout en 2 clics.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1559339352-11d035aa65de?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1550547660-d9450f859349?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "title": "Pure Karité",
+            "category": "Packaging",
+            "description": "Design de pots pour une gamme cosmétique bio.",
+            "image": "https:\/\/images.unsplash.com\/photo-1556228578-8c89e6adf883?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": false,
+            "link": "project.php?id=13",
+            "details": {
+                "client": "Pure Karité",
+                "year": "2022",
+                "role": "Graphic Designer",
+                "challenge": "Créer un packaging premium pour l'export.",
+                "solution": "Utilisation de dorure à chaud et de couleurs pastel.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1608248597279-f99d160bfbc8?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1620916566398-39f1143ab7be?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "title": "E-Learning Plateforme",
+            "category": "UX Design",
+            "description": "Plateforme éducative pour les écoles locales.",
+            "image": "https:\/\/images.unsplash.com\/photo-1501504905252-473c47e087f8?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=14",
+            "details": {
+                "client": "EduTogo",
+                "year": "2023",
+                "role": "Lead Designer",
+                "challenge": "Faciliter l'apprentissage à distance sur mobile.",
+                "solution": "Interface légère optimisée pour les faibles connexions.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1454165804606-c3d57bc86b40?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1516321318423-f06f85e504b3?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 15,
+            "title": "Hotel Palm Beach",
+            "category": "Web Design",
+            "description": "Site de réservation pour un hôtel de luxe.",
+            "image": "https:\/\/images.unsplash.com\/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=15",
+            "details": {
+                "client": "Palm Beach Group",
+                "year": "2024",
+                "role": "Web Designer",
+                "challenge": "Transmettre l'ambiance relaxante de l'hôtel.",
+                "solution": "Vidéos en fond d'écran et typographie élégante.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1582719508461-905c673771fd?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1590490360182-c33d57733427?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 16,
+            "title": "Musique Urbaine",
+            "category": "Cover Art",
+            "description": "Pochettes d'album pour artistes locaux.",
+            "image": "https:\/\/images.unsplash.com\/photo-1614613535308-eb5fbd3d2c17?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": false,
+            "link": "project.php?id=16",
+            "details": {
+                "client": "Divers Artistes",
+                "year": "2023",
+                "role": "Graphic Artist",
+                "challenge": "Capturer l'univers musical en une image.",
+                "solution": "Collages numériques et typographie 3D.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1493225255756-d9584f8606e9?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1470225620780-dba8ba36b745?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 17,
+            "title": "Fitness Gym",
+            "category": "Social Media",
+            "description": "Stratégie de contenu pour salle de sport.",
+            "image": "https:\/\/images.unsplash.com\/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=17",
+            "details": {
+                "client": "Iron Gym",
+                "year": "2022",
+                "role": "Content Creator",
+                "challenge": "Motiver les gens à s'inscrire.",
+                "solution": "Visuels 'Avant\/Après' dynamiques et citations motivantes.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1517836357463-d25dfeac3438?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1599058945522-28d584b6f0ff?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 18,
+            "title": "ONG Eau Vital",
+            "category": "Web Design",
+            "description": "Site institutionnel pour lever des fonds.",
+            "image": "https:\/\/images.unsplash.com\/photo-1538300342682-cf57afb97285?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=18",
+            "details": {
+                "client": "Eau Vital",
+                "year": "2023",
+                "role": "Web Developer",
+                "challenge": "Inspirer la confiance aux donateurs internationaux.",
+                "solution": "Design propre, transparent et axé sur l'humain.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1488521787991-ed7bbaae773c?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1469571486292-0ba58a3f068b?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 19,
+            "title": "Photo Portfolio",
+            "category": "Web Design",
+            "description": "Portfolio immersif pour un photographe de mode.",
+            "image": "https:\/\/images.unsplash.com\/photo-1472396961693-142e6e594e3c?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": false,
+            "link": "project.php?id=19",
+            "details": {
+                "client": "Kodjo Photo",
+                "year": "2024",
+                "role": "Web Designer",
+                "challenge": "Laisser toute la place aux images.",
+                "solution": "Navigation minimale et transitions fluides.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1554048612-387768052bf7?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1492633423870-43d1cd2775eb?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 20,
+            "title": "Boulangerie Epi",
+            "category": "Branding",
+            "description": "Refonte logo et devanture.",
+            "image": "https:\/\/images.unsplash.com\/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=20",
+            "details": {
+                "client": "L'Epi d'Or",
+                "year": "2022",
+                "role": "Graphic Designer",
+                "challenge": "Attirer une clientèle plus jeune.",
+                "solution": "Logo moderne et signalétique artisanale.",
+                "gallery": [
+                    "https:\/\/images.unsplash.com\/photo-1555507036-ab1f40388085?q=80&w=800",
+                    "https:\/\/images.unsplash.com\/photo-1550617931-e17a7b70dce2?q=80&w=800"
+                ]
+            }
+        },
+        {
+            "id": 21,
+            "title": "Tech Conference",
+            "category": "Print Design",
+            "description": "Affiches et flyers pour salon tech.",
+            "image": "https:\/\/images.unsplash.com\/photo-1561089489-f13d5e730d72?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=21",
+            "details": {
+                "client": "Togo Digital",
+                "year": "2023",
+                "role": "Graphic Designer",
+                "challenge": "Communiquer sur l'innovation.",
+                "solution": "Design typographique suisse.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 22,
+            "title": "Smart Home App",
+            "category": "UI Design",
+            "description": "Contrôle de maison connectée.",
+            "image": "https:\/\/images.unsplash.com\/photo-1558002038-1091a1661116?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": false,
+            "link": "project.php?id=22",
+            "details": {
+                "client": "Domotech",
+                "year": "2024",
+                "role": "UI Designer",
+                "challenge": "Simplifier la domotique.",
+                "solution": "Interface intuitive avec sliders.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 23,
+            "title": "Magazine Culture",
+            "category": "Editorial",
+            "description": "Mise en page magazine culturel.",
+            "image": "https:\/\/images.unsplash.com\/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=23",
+            "details": {
+                "client": "Culture Mag",
+                "year": "2023",
+                "role": "Layout Designer",
+                "challenge": "Rendre la lecture agréable.",
+                "solution": "Grille modulaire et typographie serif.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 24,
+            "title": "Juice Brand",
+            "category": "Packaging",
+            "description": "Bouteilles de jus de fruits locaux.",
+            "image": "https:\/\/images.unsplash.com\/photo-1620917670397-a333b79f88c1?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=24",
+            "details": {
+                "client": "Fruits du Soleil",
+                "year": "2022",
+                "role": "Graphic Designer",
+                "challenge": "Se démarquer en rayon.",
+                "solution": "Illustrations fruitées vibrantes.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 25,
+            "title": "Startup Finance",
+            "category": "Web Design",
+            "description": "Site vitrine B2B.",
+            "image": "https:\/\/images.unsplash.com\/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": false,
+            "link": "project.php?id=25",
+            "details": {
+                "client": "FinTech Pro",
+                "year": "2023",
+                "role": "Web Designer",
+                "challenge": "Rassurer les investisseurs.",
+                "solution": "Design corporate mais moderne.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 26,
+            "title": "Festival Musique",
+            "category": "Branding",
+            "description": "Identité visuelle festival.",
+            "image": "https:\/\/images.unsplash.com\/photo-1459749411177-287ce35e8b75?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=26",
+            "details": {
+                "client": "Lomé Vibes",
+                "year": "2023",
+                "role": "Art Director",
+                "challenge": "Créer une ambiance festive.",
+                "solution": "Couleurs néons et typographie bold.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 27,
+            "title": "Medical App",
+            "category": "UX Design",
+            "description": "Prise de rendez-vous docteur.",
+            "image": "https:\/\/images.unsplash.com\/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=27",
+            "details": {
+                "client": "Santé Plus",
+                "year": "2024",
+                "role": "UX Designer",
+                "challenge": "Simplifier l'accès aux soins.",
+                "solution": "Parcours utilisateur optimisé.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 28,
+            "title": "Travel Blog",
+            "category": "Web Design",
+            "description": "Blog voyage minimaliste.",
+            "image": "https:\/\/images.unsplash.com\/photo-1469854523086-cc02fe5d8800?q=80&w=1600&auto=format&fit=crop",
+            "size": "large",
+            "featured": false,
+            "link": "project.php?id=28",
+            "details": {
+                "client": "Globe Trotter",
+                "year": "2022",
+                "role": "Web Designer",
+                "challenge": "Mettre en avant les récits.",
+                "solution": "Typographie éditoriale.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 29,
+            "title": "Sneakers Shop",
+            "category": "E-commerce",
+            "description": "Boutique de baskets.",
+            "image": "https:\/\/images.unsplash.com\/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=29",
+            "details": {
+                "client": "Kicks Store",
+                "year": "2023",
+                "role": "UI Designer",
+                "challenge": "Vendre aux passionnés.",
+                "solution": "Photos produits géantes.",
+                "gallery": []
+            }
+        },
+        {
+            "id": 30,
+            "title": "Barber Shop",
+            "category": "Branding",
+            "description": "Identité visuelle barbier.",
+            "image": "https:\/\/images.unsplash.com\/photo-1585747860715-2ba37e788b70?q=80&w=800&auto=format&fit=crop",
+            "size": "small",
+            "featured": false,
+            "link": "project.php?id=30",
+            "details": {
+                "client": "Le Barbier",
+                "year": "2023",
+                "role": "Graphic Designer",
+                "challenge": "Style vintage moderne.",
+                "solution": "Logo badge et typo rétro.",
+                "gallery": []
+            }
+        }
+    ],
+    "contact": {
+        "title": "Démarrons un projet ensemble",
+        "email": "djilanrenejunior@gmail.com",
+        "phone": "+228 97 55 52 54",
+        "whatsapp_link": "https:\/\/wa.me\/0022897555254",
+        "socials": [
+            {
+                "name": "LinkedIn",
+                "url": "#"
+            },
+            {
+                "name": "Behance",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "url": "#"
+            }
+        ],
+        "cta_title": "On démarre un projet ?"
+    }
+}
